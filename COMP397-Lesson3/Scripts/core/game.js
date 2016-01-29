@@ -16,6 +16,8 @@ function gameLoop(event) {
 function main() {
     console.log("Game started!!");
     helloLabel = new createjs.Text("Hello World!", "60px Consolas", "#000000");
+    helloLabel.regX = helloLabel.getMeasuredWidth() / 2;
+    helloLabel.regY = helloLabel.getMeasuredHeight() / 2;
     stage.addChild(helloLabel);
 }
 /*
